@@ -4,7 +4,7 @@
 * 爬取信義房屋的資訊
 * 提供twpostalcode ，透過pip install 可以使用台灣區碼三位數查詢
 * 針對106年交易筆數提供交易單價趨勢
-  [GitHub](https://github.com/ekils/dannyTWRealityCrawl/blob/master/png/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202017-07-26%20%E4%B8%8A%E5%8D%8812.29.57.png)
+![GitHub Logo](https://github.com/ekils/dannyTWRealityCrawl/blob/master/png/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202017-07-26%20%E4%B8%8A%E5%8D%8812.29.57.png)
 
 
 
