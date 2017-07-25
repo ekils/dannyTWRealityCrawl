@@ -1,0 +1,2498 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_9699d34f8fe749a5bc95ee0bca90846b {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9699d34f8fe749a5bc95ee0bca90846b" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_9699d34f8fe749a5bc95ee0bca90846b = L.map(
+                                  'map_9699d34f8fe749a5bc95ee0bca90846b',
+                                  {center: [24.9664922,121.5397678],
+                                  zoom: 17,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_1b5fb721fb74495788012a47ace2322e = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_9699d34f8fe749a5bc95ee0bca90846b);
+
+        
+    
+                var marker_cluster_4c9246ea76b64c74af0148925108735e = L.markerClusterGroup();
+                map_9699d34f8fe749a5bc95ee0bca90846b.addLayer(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+
+            var marker_b6b5a19ecffe4c3497ba4712efb651d9 = L.marker(
+                [24.9725148982,121.548358778],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_fda077dd3dad47378b42c6450955f643 = L.popup({maxWidth: '300'});
+
+            
+                var html_4529c05c6f7f4013846c6cf2371a86d8 = $('<div id="html_4529c05c6f7f4013846c6cf2371a86d8" style="width: 100.0%; height: 100.0%;">新店區寶興路42巷, 42.3萬/坪</div>')[0];
+                popup_fda077dd3dad47378b42c6450955f643.setContent(html_4529c05c6f7f4013846c6cf2371a86d8);
+            
+
+            marker_b6b5a19ecffe4c3497ba4712efb651d9.bindPopup(popup_fda077dd3dad47378b42c6450955f643);
+
+            
+        
+    
+
+            var marker_4aba2b57066f4cb496dcc74ff86c5cc6 = L.marker(
+                [24.9788263181,121.533712044],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_22c1cf5aa3cc418aa8b7c8b429ed508a = L.popup({maxWidth: '300'});
+
+            
+                var html_ac08bfc122b74da188ba8dc5eed58801 = $('<div id="html_ac08bfc122b74da188ba8dc5eed58801" style="width: 100.0%; height: 100.0%;">新店區中央路, 51.2萬/坪</div>')[0];
+                popup_22c1cf5aa3cc418aa8b7c8b429ed508a.setContent(html_ac08bfc122b74da188ba8dc5eed58801);
+            
+
+            marker_4aba2b57066f4cb496dcc74ff86c5cc6.bindPopup(popup_22c1cf5aa3cc418aa8b7c8b429ed508a);
+
+            
+        
+    
+
+            var marker_7c7b83975cab49af9b9a91c829fd4b37 = L.marker(
+                [24.9755204851,121.546241064],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_4fd96e95e9494f2fb289f6fb43b07a1e = L.popup({maxWidth: '300'});
+
+            
+                var html_092ac3e1b3334faf9d2e38aa82f3318d = $('<div id="html_092ac3e1b3334faf9d2e38aa82f3318d" style="width: 100.0%; height: 100.0%;">新店區寶橋路78巷, 62.6萬/坪</div>')[0];
+                popup_4fd96e95e9494f2fb289f6fb43b07a1e.setContent(html_092ac3e1b3334faf9d2e38aa82f3318d);
+            
+
+            marker_7c7b83975cab49af9b9a91c829fd4b37.bindPopup(popup_4fd96e95e9494f2fb289f6fb43b07a1e);
+
+            
+        
+    
+
+            var marker_934739f3e4dc42b8b62537b96ccc5520 = L.marker(
+                [24.969735,121.54069125],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_143f4459bc804d67a92276eb9c400ce3 = L.popup({maxWidth: '300'});
+
+            
+                var html_15adddbeb8ef4e03a3ac0667ba5213fb = $('<div id="html_15adddbeb8ef4e03a3ac0667ba5213fb" style="width: 100.0%; height: 100.0%;">新店區中正路117巷, 46.9萬/坪</div>')[0];
+                popup_143f4459bc804d67a92276eb9c400ce3.setContent(html_15adddbeb8ef4e03a3ac0667ba5213fb);
+            
+
+            marker_934739f3e4dc42b8b62537b96ccc5520.bindPopup(popup_143f4459bc804d67a92276eb9c400ce3);
+
+            
+        
+    
+
+            var marker_ce6b96707f7e448bb589a1410bacde07 = L.marker(
+                [24.9788263181,121.533712044],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_ff796e3cb0f14e24a06bab736c0ee6ee = L.popup({maxWidth: '300'});
+
+            
+                var html_06b8d16ebac54a2b8624b01c166c662f = $('<div id="html_06b8d16ebac54a2b8624b01c166c662f" style="width: 100.0%; height: 100.0%;">新店區中央路, 46.5萬/坪</div>')[0];
+                popup_ff796e3cb0f14e24a06bab736c0ee6ee.setContent(html_06b8d16ebac54a2b8624b01c166c662f);
+            
+
+            marker_ce6b96707f7e448bb589a1410bacde07.bindPopup(popup_ff796e3cb0f14e24a06bab736c0ee6ee);
+
+            
+        
+    
+
+            var marker_b1429ee99c9f40359dc194edcddcd793 = L.marker(
+                [24.9585165,121.5136575],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_c53c7e1bb30d45faaf33b23710921060 = L.popup({maxWidth: '300'});
+
+            
+                var html_61f1d1a117224fe58e4dcdc0133459ef = $('<div id="html_61f1d1a117224fe58e4dcdc0133459ef" style="width: 100.0%; height: 100.0%;">新店區安忠路57巷9弄, 21.8萬/坪</div>')[0];
+                popup_c53c7e1bb30d45faaf33b23710921060.setContent(html_61f1d1a117224fe58e4dcdc0133459ef);
+            
+
+            marker_b1429ee99c9f40359dc194edcddcd793.bindPopup(popup_c53c7e1bb30d45faaf33b23710921060);
+
+            
+        
+    
+
+            var marker_724919a5711145ebb185a7c85f903536 = L.marker(
+                [24.9894955126,121.534655641],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_75eb27261fde4976836f5c6c44286b58 = L.popup({maxWidth: '300'});
+
+            
+                var html_eddf94e04d064b4998eb2b98f73a9aba = $('<div id="html_eddf94e04d064b4998eb2b98f73a9aba" style="width: 100.0%; height: 100.0%;">新店區中正路680巷, 29.5萬/坪</div>')[0];
+                popup_75eb27261fde4976836f5c6c44286b58.setContent(html_eddf94e04d064b4998eb2b98f73a9aba);
+            
+
+            marker_724919a5711145ebb185a7c85f903536.bindPopup(popup_75eb27261fde4976836f5c6c44286b58);
+
+            
+        
+    
+
+            var marker_f8b16411aeca47f9be1b6b602b5ce9b2 = L.marker(
+                [24.9637927245,121.516385078],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_2d80b0d9358b4e83acd945970f1fe1e1 = L.popup({maxWidth: '300'});
+
+            
+                var html_9da7f270a26740a983dc069b2a542036 = $('<div id="html_9da7f270a26740a983dc069b2a542036" style="width: 100.0%; height: 100.0%;">新店區安康路二段, 34.0萬/坪</div>')[0];
+                popup_2d80b0d9358b4e83acd945970f1fe1e1.setContent(html_9da7f270a26740a983dc069b2a542036);
+            
+
+            marker_f8b16411aeca47f9be1b6b602b5ce9b2.bindPopup(popup_2d80b0d9358b4e83acd945970f1fe1e1);
+
+            
+        
+    
+
+            var marker_497d20a42ce44c6d8d0444d67ec19009 = L.marker(
+                [24.9755204851,121.546241064],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_4b420466064b46e1a82cdf825a38ccad = L.popup({maxWidth: '300'});
+
+            
+                var html_783cb1e775d04826b79b2d3287782ee8 = $('<div id="html_783cb1e775d04826b79b2d3287782ee8" style="width: 100.0%; height: 100.0%;">新店區寶橋路78巷, 48.2萬/坪</div>')[0];
+                popup_4b420466064b46e1a82cdf825a38ccad.setContent(html_783cb1e775d04826b79b2d3287782ee8);
+            
+
+            marker_497d20a42ce44c6d8d0444d67ec19009.bindPopup(popup_4b420466064b46e1a82cdf825a38ccad);
+
+            
+        
+    
+
+            var marker_38c16df0d05f47c2bc34770091dc2cde = L.marker(
+                [24.9793344275,121.53676952],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_5f5c8c896f6043b2b13da3ead38493ac = L.popup({maxWidth: '300'});
+
+            
+                var html_1c46087572304da0ac942a4cacea2be3 = $('<div id="html_1c46087572304da0ac942a4cacea2be3" style="width: 100.0%; height: 100.0%;">新店區二十張路105巷, 32.0萬/坪</div>')[0];
+                popup_5f5c8c896f6043b2b13da3ead38493ac.setContent(html_1c46087572304da0ac942a4cacea2be3);
+            
+
+            marker_38c16df0d05f47c2bc34770091dc2cde.bindPopup(popup_5f5c8c896f6043b2b13da3ead38493ac);
+
+            
+        
+    
+
+            var marker_1a7ed11f7a8443c98087070499d50a9f = L.marker(
+                [24.9788263181,121.533712044],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_0ff5a333e31240c9a5e4aed281a80f6c = L.popup({maxWidth: '300'});
+
+            
+                var html_c3f55a125684482f871da2f8c42c4bb8 = $('<div id="html_c3f55a125684482f871da2f8c42c4bb8" style="width: 100.0%; height: 100.0%;">新店區中央路, 47.4萬/坪</div>')[0];
+                popup_0ff5a333e31240c9a5e4aed281a80f6c.setContent(html_c3f55a125684482f871da2f8c42c4bb8);
+            
+
+            marker_1a7ed11f7a8443c98087070499d50a9f.bindPopup(popup_0ff5a333e31240c9a5e4aed281a80f6c);
+
+            
+        
+    
+
+            var marker_891a771a4f734d768e0d8e79e0ca984a = L.marker(
+                [24.9595737691,121.510248837],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_dbe3f2a96c98456ebd1b56aa4b9d5dcb = L.popup({maxWidth: '300'});
+
+            
+                var html_a32831fec1b04230840d0529ceb2a608 = $('<div id="html_a32831fec1b04230840d0529ceb2a608" style="width: 100.0%; height: 100.0%;">新店區安康路二段206巷, 36.0萬/坪</div>')[0];
+                popup_dbe3f2a96c98456ebd1b56aa4b9d5dcb.setContent(html_a32831fec1b04230840d0529ceb2a608);
+            
+
+            marker_891a771a4f734d768e0d8e79e0ca984a.bindPopup(popup_dbe3f2a96c98456ebd1b56aa4b9d5dcb);
+
+            
+        
+    
+
+            var marker_da5dda835b804a3e83e139ac3cfbc272 = L.marker(
+                [24.9755204851,121.546241064],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_517d9fe8302744df9fd38d3c597a4dbf = L.popup({maxWidth: '300'});
+
+            
+                var html_5461ae0956aa490a94e758d922e2e274 = $('<div id="html_5461ae0956aa490a94e758d922e2e274" style="width: 100.0%; height: 100.0%;">新店區寶橋路78巷, 52.9萬/坪</div>')[0];
+                popup_517d9fe8302744df9fd38d3c597a4dbf.setContent(html_5461ae0956aa490a94e758d922e2e274);
+            
+
+            marker_da5dda835b804a3e83e139ac3cfbc272.bindPopup(popup_517d9fe8302744df9fd38d3c597a4dbf);
+
+            
+        
+    
+
+            var marker_5673b587bb024cbe9225f2f416257f19 = L.marker(
+                [24.9616601138,121.510240052],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_2da01531b6dd414897bfc690bdc8833d = L.popup({maxWidth: '300'});
+
+            
+                var html_7ec797bbe59e45e6beb79b8086055219 = $('<div id="html_7ec797bbe59e45e6beb79b8086055219" style="width: 100.0%; height: 100.0%;">新店區安德街82巷, 30.9萬/坪</div>')[0];
+                popup_2da01531b6dd414897bfc690bdc8833d.setContent(html_7ec797bbe59e45e6beb79b8086055219);
+            
+
+            marker_5673b587bb024cbe9225f2f416257f19.bindPopup(popup_2da01531b6dd414897bfc690bdc8833d);
+
+            
+        
+    
+
+            var marker_1c8099b18c1849daaeac7514d3e9d8a4 = L.marker(
+                [24.9829581137,121.542707247],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_47f9bbc73e3b4dbe91e78a1e8da21d0e = L.popup({maxWidth: '300'});
+
+            
+                var html_f9be021d60f748969ae5226a6532276a = $('<div id="html_f9be021d60f748969ae5226a6532276a" style="width: 100.0%; height: 100.0%;">新店區民權路, 49.0萬/坪</div>')[0];
+                popup_47f9bbc73e3b4dbe91e78a1e8da21d0e.setContent(html_f9be021d60f748969ae5226a6532276a);
+            
+
+            marker_1c8099b18c1849daaeac7514d3e9d8a4.bindPopup(popup_47f9bbc73e3b4dbe91e78a1e8da21d0e);
+
+            
+        
+    
+
+            var marker_0819b79054d842df93489285869f2f1a = L.marker(
+                [24.96734,121.5414],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_2db7657c45034115a0dff959bea9fab3 = L.popup({maxWidth: '300'});
+
+            
+                var html_f3b88238bfb641a089c771233e65accd = $('<div id="html_f3b88238bfb641a089c771233e65accd" style="width: 100.0%; height: 100.0%;">新店區五　路67巷2弄, 45.3萬/坪</div>')[0];
+                popup_2db7657c45034115a0dff959bea9fab3.setContent(html_f3b88238bfb641a089c771233e65accd);
+            
+
+            marker_0819b79054d842df93489285869f2f1a.bindPopup(popup_2db7657c45034115a0dff959bea9fab3);
+
+            
+        
+    
+
+            var marker_8cdc59e86c9a48eb92a22ce2654f1b54 = L.marker(
+                [24.9584215787,121.476889686],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_327039a65b3d450197e8c4b6bb55e685 = L.popup({maxWidth: '300'});
+
+            
+                var html_781ac59d75dc4555aebc2e39b4ae1abc = $('<div id="html_781ac59d75dc4555aebc2e39b4ae1abc" style="width: 100.0%; height: 100.0%;">新店區安祥路109巷, 31.1萬/坪</div>')[0];
+                popup_327039a65b3d450197e8c4b6bb55e685.setContent(html_781ac59d75dc4555aebc2e39b4ae1abc);
+            
+
+            marker_8cdc59e86c9a48eb92a22ce2654f1b54.bindPopup(popup_327039a65b3d450197e8c4b6bb55e685);
+
+            
+        
+    
+
+            var marker_62812b9430c04f15b0b1e469a4af51c3 = L.marker(
+                [24.9650623695,121.545198116],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_a45e00c8ba42403cbafafa217e27bdf3 = L.popup({maxWidth: '300'});
+
+            
+                var html_a3d96a754679440586612573a8b5489e = $('<div id="html_a3d96a754679440586612573a8b5489e" style="width: 100.0%; height: 100.0%;">新店區新坡一街, 22.7萬/坪</div>')[0];
+                popup_a45e00c8ba42403cbafafa217e27bdf3.setContent(html_a3d96a754679440586612573a8b5489e);
+            
+
+            marker_62812b9430c04f15b0b1e469a4af51c3.bindPopup(popup_a45e00c8ba42403cbafafa217e27bdf3);
+
+            
+        
+    
+
+            var marker_54a658aba9294a5891721a83c7fbe0ca = L.marker(
+                [24.9640888625,121.541648862],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_b778435aa4a749399d9c53289abd0a6d = L.popup({maxWidth: '300'});
+
+            
+                var html_36a4576fba3c46239178bfd7fd315f94 = $('<div id="html_36a4576fba3c46239178bfd7fd315f94" style="width: 100.0%; height: 100.0%;">新店區檳榔路29巷1弄, 37.2萬/坪</div>')[0];
+                popup_b778435aa4a749399d9c53289abd0a6d.setContent(html_36a4576fba3c46239178bfd7fd315f94);
+            
+
+            marker_54a658aba9294a5891721a83c7fbe0ca.bindPopup(popup_b778435aa4a749399d9c53289abd0a6d);
+
+            
+        
+    
+
+            var marker_30d6abfae2184ee2ab47240ce40f5477 = L.marker(
+                [24.9735156507,121.516172009],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_9ff69497dbd74b1dbb141da5ccc80433 = L.popup({maxWidth: '300'});
+
+            
+                var html_5cd4603cf5ee421ba431184409c8f70a = $('<div id="html_5cd4603cf5ee421ba431184409c8f70a" style="width: 100.0%; height: 100.0%;">新店區安興路, 30.0萬/坪</div>')[0];
+                popup_9ff69497dbd74b1dbb141da5ccc80433.setContent(html_5cd4603cf5ee421ba431184409c8f70a);
+            
+
+            marker_30d6abfae2184ee2ab47240ce40f5477.bindPopup(popup_9ff69497dbd74b1dbb141da5ccc80433);
+
+            
+        
+    
+
+            var marker_c842c7f0db9f406e9fa930cd27deae9b = L.marker(
+                [24.9588276626,121.476665413],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_ed011ad19fb14329a53409f4ba61ec20 = L.popup({maxWidth: '300'});
+
+            
+                var html_844c7515387447058a14a84a8a39ae55 = $('<div id="html_844c7515387447058a14a84a8a39ae55" style="width: 100.0%; height: 100.0%;">新店區安祥路109巷90弄, 27.0萬/坪</div>')[0];
+                popup_ed011ad19fb14329a53409f4ba61ec20.setContent(html_844c7515387447058a14a84a8a39ae55);
+            
+
+            marker_c842c7f0db9f406e9fa930cd27deae9b.bindPopup(popup_ed011ad19fb14329a53409f4ba61ec20);
+
+            
+        
+    
+
+            var marker_db3fa96ce377401a8cefc642023bd741 = L.marker(
+                [24.9858789094,121.5195899],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_cf69cafb673c450b922617e20560b957 = L.popup({maxWidth: '300'});
+
+            
+                var html_15659c4fe6f8478697f48f75e0048b1c = $('<div id="html_15659c4fe6f8478697f48f75e0048b1c" style="width: 100.0%; height: 100.0%;">新店區新和街59巷, 20.2萬/坪</div>')[0];
+                popup_cf69cafb673c450b922617e20560b957.setContent(html_15659c4fe6f8478697f48f75e0048b1c);
+            
+
+            marker_db3fa96ce377401a8cefc642023bd741.bindPopup(popup_cf69cafb673c450b922617e20560b957);
+
+            
+        
+    
+
+            var marker_cd7e9d2cb1434024b0df1d0b83fef6da = L.marker(
+                [24.9690877397,121.545955403],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_6b3dea3988d844dea77c7dfac7cb63eb = L.popup({maxWidth: '300'});
+
+            
+                var html_e695a00f0c584e838c4587b8abd77293 = $('<div id="html_e695a00f0c584e838c4587b8abd77293" style="width: 100.0%; height: 100.0%;">新店區中興路一段288巷, 36.1萬/坪</div>')[0];
+                popup_6b3dea3988d844dea77c7dfac7cb63eb.setContent(html_e695a00f0c584e838c4587b8abd77293);
+            
+
+            marker_cd7e9d2cb1434024b0df1d0b83fef6da.bindPopup(popup_6b3dea3988d844dea77c7dfac7cb63eb);
+
+            
+        
+    
+
+            var marker_03aa6e6496514bacb04d0ff57f9a42fd = L.marker(
+                [24.9755204851,121.546241064],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_c9bc0ea3f8824d908f6745185319c75c = L.popup({maxWidth: '300'});
+
+            
+                var html_b05159a68a454e57b396603c27b59f89 = $('<div id="html_b05159a68a454e57b396603c27b59f89" style="width: 100.0%; height: 100.0%;">新店區寶橋路78巷, 52.0萬/坪</div>')[0];
+                popup_c9bc0ea3f8824d908f6745185319c75c.setContent(html_b05159a68a454e57b396603c27b59f89);
+            
+
+            marker_03aa6e6496514bacb04d0ff57f9a42fd.bindPopup(popup_c9bc0ea3f8824d908f6745185319c75c);
+
+            
+        
+    
+
+            var marker_652deb7a39b446908f167508ecf71bad = L.marker(
+                [24.9380308903,121.510906296],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_7cef159d285645228b35f61afcc558ba = L.popup({maxWidth: '300'});
+
+            
+                var html_1319eb6eb75b420c9bd3daeb7410df80 = $('<div id="html_1319eb6eb75b420c9bd3daeb7410df80" style="width: 100.0%; height: 100.0%;">新店區禾豐九路, 35.6萬/坪</div>')[0];
+                popup_7cef159d285645228b35f61afcc558ba.setContent(html_1319eb6eb75b420c9bd3daeb7410df80);
+            
+
+            marker_652deb7a39b446908f167508ecf71bad.bindPopup(popup_7cef159d285645228b35f61afcc558ba);
+
+            
+        
+    
+
+            var marker_55cb2ac26ff04e6996a81e0b5e2b6538 = L.marker(
+                [24.9590001751,121.556372866],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_ef9d57383a654f06a701342feb7453a9 = L.popup({maxWidth: '300'});
+
+            
+                var html_fe1d2de2980248dea3506a495570d638 = $('<div id="html_fe1d2de2980248dea3506a495570d638" style="width: 100.0%; height: 100.0%;">新店區秀水路, 22.9萬/坪</div>')[0];
+                popup_ef9d57383a654f06a701342feb7453a9.setContent(html_fe1d2de2980248dea3506a495570d638);
+            
+
+            marker_55cb2ac26ff04e6996a81e0b5e2b6538.bindPopup(popup_ef9d57383a654f06a701342feb7453a9);
+
+            
+        
+    
+
+            var marker_0be8838090b84571bb75f6d91c6a3084 = L.marker(
+                [24.9722150092,121.541883195],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_433c5a02b9134be991c466fb55febc7a = L.popup({maxWidth: '300'});
+
+            
+                var html_e0424d66cdba43e9b0fdba2b7b5bfb6e = $('<div id="html_e0424d66cdba43e9b0fdba2b7b5bfb6e" style="width: 100.0%; height: 100.0%;">新店區中正路154巷, 84.6萬/坪</div>')[0];
+                popup_433c5a02b9134be991c466fb55febc7a.setContent(html_e0424d66cdba43e9b0fdba2b7b5bfb6e);
+            
+
+            marker_0be8838090b84571bb75f6d91c6a3084.bindPopup(popup_433c5a02b9134be991c466fb55febc7a);
+
+            
+        
+    
+
+            var marker_59d23f4233604aeca469e4e2bd4e65ff = L.marker(
+                [24.986548299,121.541931],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_3372bd9c104f43ca92fd178cc64dcc06 = L.popup({maxWidth: '300'});
+
+            
+                var html_712a94c01e654616b5152466e76c908e = $('<div id="html_712a94c01e654616b5152466e76c908e" style="width: 100.0%; height: 100.0%;">新店區中興路三段, 51.3萬/坪</div>')[0];
+                popup_3372bd9c104f43ca92fd178cc64dcc06.setContent(html_712a94c01e654616b5152466e76c908e);
+            
+
+            marker_59d23f4233604aeca469e4e2bd4e65ff.bindPopup(popup_3372bd9c104f43ca92fd178cc64dcc06);
+
+            
+        
+    
+
+            var marker_5c43c5cf515f482b9a063d1204a3a3e6 = L.marker(
+                [24.9773419346,121.515699517],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_a1fc077af45b480eb9f0692b4371ae6f = L.popup({maxWidth: '300'});
+
+            
+                var html_4ba308ba8ed04da89f8ac0d903c5c34a = $('<div id="html_4ba308ba8ed04da89f8ac0d903c5c34a" style="width: 100.0%; height: 100.0%;">新店區安民街, 29.5萬/坪</div>')[0];
+                popup_a1fc077af45b480eb9f0692b4371ae6f.setContent(html_4ba308ba8ed04da89f8ac0d903c5c34a);
+            
+
+            marker_5c43c5cf515f482b9a063d1204a3a3e6.bindPopup(popup_a1fc077af45b480eb9f0692b4371ae6f);
+
+            
+        
+    
+
+            var marker_a248fcc379e04a29a1b02f79f78b454e = L.marker(
+                [24.9788263181,121.533712044],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_e978297cb4d4424482a342c58cf18e9d = L.popup({maxWidth: '300'});
+
+            
+                var html_4cb554ac9b8648b49521c17dc0265fd4 = $('<div id="html_4cb554ac9b8648b49521c17dc0265fd4" style="width: 100.0%; height: 100.0%;">新店區中央路, 51.7萬/坪</div>')[0];
+                popup_e978297cb4d4424482a342c58cf18e9d.setContent(html_4cb554ac9b8648b49521c17dc0265fd4);
+            
+
+            marker_a248fcc379e04a29a1b02f79f78b454e.bindPopup(popup_e978297cb4d4424482a342c58cf18e9d);
+
+            
+        
+    
+
+            var marker_3f00afa4310b45e6827e6b09329a8210 = L.marker(
+                [24.9637927245,121.516385078],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_b753337831c94fb3b55b847e2da359f3 = L.popup({maxWidth: '300'});
+
+            
+                var html_53976d41624843439a500d94201a9cd0 = $('<div id="html_53976d41624843439a500d94201a9cd0" style="width: 100.0%; height: 100.0%;">新店區安康路二段, 34.1萬/坪</div>')[0];
+                popup_b753337831c94fb3b55b847e2da359f3.setContent(html_53976d41624843439a500d94201a9cd0);
+            
+
+            marker_3f00afa4310b45e6827e6b09329a8210.bindPopup(popup_b753337831c94fb3b55b847e2da359f3);
+
+            
+        
+    
+
+            var marker_19cda7ddd3524067806b81f1c2c3092e = L.marker(
+                [24.9755204851,121.546241064],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_1e42aaa198774e78a947b870ea7a62f8 = L.popup({maxWidth: '300'});
+
+            
+                var html_415ec85df10e4df39b0a41f5b80abb61 = $('<div id="html_415ec85df10e4df39b0a41f5b80abb61" style="width: 100.0%; height: 100.0%;">新店區寶橋路78巷, 49.6萬/坪</div>')[0];
+                popup_1e42aaa198774e78a947b870ea7a62f8.setContent(html_415ec85df10e4df39b0a41f5b80abb61);
+            
+
+            marker_19cda7ddd3524067806b81f1c2c3092e.bindPopup(popup_1e42aaa198774e78a947b870ea7a62f8);
+
+            
+        
+    
+
+            var marker_cbb236c52f8545658f719e728b9e6ec0 = L.marker(
+                [24.9578006743,121.53832731],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_8f45534a41de4a399bd8b2633a53d9a6 = L.popup({maxWidth: '300'});
+
+            
+                var html_0c31a372db644ef891d381083f064e7d = $('<div id="html_0c31a372db644ef891d381083f064e7d" style="width: 100.0%; height: 100.0%;">新店區中興路一段, 44.9萬/坪</div>')[0];
+                popup_8f45534a41de4a399bd8b2633a53d9a6.setContent(html_0c31a372db644ef891d381083f064e7d);
+            
+
+            marker_cbb236c52f8545658f719e728b9e6ec0.bindPopup(popup_8f45534a41de4a399bd8b2633a53d9a6);
+
+            
+        
+    
+
+            var marker_d143fb0f577c4b4fb7cb811e7f92fb58 = L.marker(
+                [24.9773419346,121.515699517],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_21a5f977c7a04d72aa5fefb8695e2f08 = L.popup({maxWidth: '300'});
+
+            
+                var html_eafabb1750414487949b400cb21d0050 = $('<div id="html_eafabb1750414487949b400cb21d0050" style="width: 100.0%; height: 100.0%;">新店區安民街, 23.8萬/坪</div>')[0];
+                popup_21a5f977c7a04d72aa5fefb8695e2f08.setContent(html_eafabb1750414487949b400cb21d0050);
+            
+
+            marker_d143fb0f577c4b4fb7cb811e7f92fb58.bindPopup(popup_21a5f977c7a04d72aa5fefb8695e2f08);
+
+            
+        
+    
+
+            var marker_32d0ca73ff224adbbd4ec90ab8bdeaec = L.marker(
+                [24.9650623695,121.545198116],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_5bd016a80bd04a5289493114df0988f2 = L.popup({maxWidth: '300'});
+
+            
+                var html_0d033bb01aca4fb4a7e83a932b5f32bd = $('<div id="html_0d033bb01aca4fb4a7e83a932b5f32bd" style="width: 100.0%; height: 100.0%;">新店區新坡一街, 25.1萬/坪</div>')[0];
+                popup_5bd016a80bd04a5289493114df0988f2.setContent(html_0d033bb01aca4fb4a7e83a932b5f32bd);
+            
+
+            marker_32d0ca73ff224adbbd4ec90ab8bdeaec.bindPopup(popup_5bd016a80bd04a5289493114df0988f2);
+
+            
+        
+    
+
+            var marker_7593b5f3a5a542a78131d07ad19fe2e4 = L.marker(
+                [24.9595739624,121.510491284],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_a6400a0807d64cbe81469aa46862d5f9 = L.popup({maxWidth: '300'});
+
+            
+                var html_990b2ff9fba64037a0f1cb4f3faa7aca = $('<div id="html_990b2ff9fba64037a0f1cb4f3faa7aca" style="width: 100.0%; height: 100.0%;">新店區安康路二段159巷, 30.9萬/坪</div>')[0];
+                popup_a6400a0807d64cbe81469aa46862d5f9.setContent(html_990b2ff9fba64037a0f1cb4f3faa7aca);
+            
+
+            marker_7593b5f3a5a542a78131d07ad19fe2e4.bindPopup(popup_a6400a0807d64cbe81469aa46862d5f9);
+
+            
+        
+    
+
+            var marker_074a047daa6f43edbba5699b45fdf896 = L.marker(
+                [24.9787096845,121.539147649],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_295c68d2a31c409995be8259080ea62d = L.popup({maxWidth: '300'});
+
+            
+                var html_a5fa4c5dc21f44b5838b0ed9b53e938f = $('<div id="html_a5fa4c5dc21f44b5838b0ed9b53e938f" style="width: 100.0%; height: 100.0%;">新店區建國路128巷, 52.8萬/坪</div>')[0];
+                popup_295c68d2a31c409995be8259080ea62d.setContent(html_a5fa4c5dc21f44b5838b0ed9b53e938f);
+            
+
+            marker_074a047daa6f43edbba5699b45fdf896.bindPopup(popup_295c68d2a31c409995be8259080ea62d);
+
+            
+        
+    
+
+            var marker_6170012c33914d3c9243ad553f7c121e = L.marker(
+                [24.981525,121.5464805],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_4461117832dc4eeda72d1b7dd403392d = L.popup({maxWidth: '300'});
+
+            
+                var html_f50ca84a822f439c841cc0ddf8d4875e = $('<div id="html_f50ca84a822f439c841cc0ddf8d4875e" style="width: 100.0%; height: 100.0%;">新店區寶元路二段38巷, 40.3萬/坪</div>')[0];
+                popup_4461117832dc4eeda72d1b7dd403392d.setContent(html_f50ca84a822f439c841cc0ddf8d4875e);
+            
+
+            marker_6170012c33914d3c9243ad553f7c121e.bindPopup(popup_4461117832dc4eeda72d1b7dd403392d);
+
+            
+        
+    
+
+            var marker_e0da873f5a1941629c2d08bbe5900be1 = L.marker(
+                [24.97752,121.540797],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_399718e5a2684180a3a0be56cf30d861 = L.popup({maxWidth: '300'});
+
+            
+                var html_a2f56d9d3f24414e93b183c4a4b35cfa = $('<div id="html_a2f56d9d3f24414e93b183c4a4b35cfa" style="width: 100.0%; height: 100.0%;">新店區明德路69巷, 44.8萬/坪</div>')[0];
+                popup_399718e5a2684180a3a0be56cf30d861.setContent(html_a2f56d9d3f24414e93b183c4a4b35cfa);
+            
+
+            marker_e0da873f5a1941629c2d08bbe5900be1.bindPopup(popup_399718e5a2684180a3a0be56cf30d861);
+
+            
+        
+    
+
+            var marker_c2276c17f51e4b76bc1d1b330a413c20 = L.marker(
+                [24.9755204851,121.546241064],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_4260d05206404bd492ebf205c24fd5e7 = L.popup({maxWidth: '300'});
+
+            
+                var html_4a983d1d78c7496e8b4ab2ef144f47e1 = $('<div id="html_4a983d1d78c7496e8b4ab2ef144f47e1" style="width: 100.0%; height: 100.0%;">新店區寶橋路78巷, 41.9萬/坪</div>')[0];
+                popup_4260d05206404bd492ebf205c24fd5e7.setContent(html_4a983d1d78c7496e8b4ab2ef144f47e1);
+            
+
+            marker_c2276c17f51e4b76bc1d1b330a413c20.bindPopup(popup_4260d05206404bd492ebf205c24fd5e7);
+
+            
+        
+    
+
+            var marker_819163c08faa472a8c297fabf2fee8a7 = L.marker(
+                [24.9873936794,121.519878425],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_0d5b347305df46b79d81d92bff78a413 = L.popup({maxWidth: '300'});
+
+            
+                var html_ae828da0064749b7bc416cf69b6c1e2c = $('<div id="html_ae828da0064749b7bc416cf69b6c1e2c" style="width: 100.0%; height: 100.0%;">新店區永安街83巷3弄, 27.5萬/坪</div>')[0];
+                popup_0d5b347305df46b79d81d92bff78a413.setContent(html_ae828da0064749b7bc416cf69b6c1e2c);
+            
+
+            marker_819163c08faa472a8c297fabf2fee8a7.bindPopup(popup_0d5b347305df46b79d81d92bff78a413);
+
+            
+        
+    
+
+            var marker_1407c9f215ea4b7596f21df99dbc32a3 = L.marker(
+                [24.9836539801,121.525868193],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_8bebdc9a2e20441f8f5660fb12f32d00 = L.popup({maxWidth: '300'});
+
+            
+                var html_9231d8f706e94d3e81d6f847559926a1 = $('<div id="html_9231d8f706e94d3e81d6f847559926a1" style="width: 100.0%; height: 100.0%;">新店區溪園路, 46.0萬/坪</div>')[0];
+                popup_8bebdc9a2e20441f8f5660fb12f32d00.setContent(html_9231d8f706e94d3e81d6f847559926a1);
+            
+
+            marker_1407c9f215ea4b7596f21df99dbc32a3.bindPopup(popup_8bebdc9a2e20441f8f5660fb12f32d00);
+
+            
+        
+    
+
+            var marker_3e830d6ae55040a78e7e8bba52304a9f = L.marker(
+                [24.9755204851,121.546241064],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_2792219916f247809c92b4bd7eaaeb39 = L.popup({maxWidth: '300'});
+
+            
+                var html_edda529c285c490482931d80193eca42 = $('<div id="html_edda529c285c490482931d80193eca42" style="width: 100.0%; height: 100.0%;">新店區寶橋路78巷, 44.4萬/坪</div>')[0];
+                popup_2792219916f247809c92b4bd7eaaeb39.setContent(html_edda529c285c490482931d80193eca42);
+            
+
+            marker_3e830d6ae55040a78e7e8bba52304a9f.bindPopup(popup_2792219916f247809c92b4bd7eaaeb39);
+
+            
+        
+    
+
+            var marker_d7fdce018ef441879ff172f18a4d9888 = L.marker(
+                [24.9936615,121.53551625],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_b5a1b835169145428fe5d6ec086f4572 = L.popup({maxWidth: '300'});
+
+            
+                var html_c74e3ad53b854949b856d10295d0a7bc = $('<div id="html_c74e3ad53b854949b856d10295d0a7bc" style="width: 100.0%; height: 100.0%;">新店區中正路700巷, 27.6萬/坪</div>')[0];
+                popup_b5a1b835169145428fe5d6ec086f4572.setContent(html_c74e3ad53b854949b856d10295d0a7bc);
+            
+
+            marker_d7fdce018ef441879ff172f18a4d9888.bindPopup(popup_b5a1b835169145428fe5d6ec086f4572);
+
+            
+        
+    
+
+            var marker_3446d1de6c974b5c9b484e8ebae16365 = L.marker(
+                [24.9813620985,121.540048678],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_abba2a5c5f98456d994f06198070c0d9 = L.popup({maxWidth: '300'});
+
+            
+                var html_1e83e7e9e43e454e992faa067f70c731 = $('<div id="html_1e83e7e9e43e454e992faa067f70c731" style="width: 100.0%; height: 100.0%;">新店區北新路三段65巷34弄, 36.3萬/坪</div>')[0];
+                popup_abba2a5c5f98456d994f06198070c0d9.setContent(html_1e83e7e9e43e454e992faa067f70c731);
+            
+
+            marker_3446d1de6c974b5c9b484e8ebae16365.bindPopup(popup_abba2a5c5f98456d994f06198070c0d9);
+
+            
+        
+    
+
+            var marker_dabbd3d1096d425b8b3dd2f0a027fdef = L.marker(
+                [24.9755204851,121.546241064],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_336124328c21441cbb3df3b62deb0abb = L.popup({maxWidth: '300'});
+
+            
+                var html_cce7bdfeb7ad4599be1b9589d4b91bb0 = $('<div id="html_cce7bdfeb7ad4599be1b9589d4b91bb0" style="width: 100.0%; height: 100.0%;">新店區寶橋路78巷, 49.5萬/坪</div>')[0];
+                popup_336124328c21441cbb3df3b62deb0abb.setContent(html_cce7bdfeb7ad4599be1b9589d4b91bb0);
+            
+
+            marker_dabbd3d1096d425b8b3dd2f0a027fdef.bindPopup(popup_336124328c21441cbb3df3b62deb0abb);
+
+            
+        
+    
+
+            var marker_c968f3952c014ebabeaa727cbba896d2 = L.marker(
+                [24.9755204851,121.546241064],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_7bf9156270a94d28bd47d758d6fa52d2 = L.popup({maxWidth: '300'});
+
+            
+                var html_f2ae749a35784fbe955fa3f53cd2438f = $('<div id="html_f2ae749a35784fbe955fa3f53cd2438f" style="width: 100.0%; height: 100.0%;">新店區寶橋路78巷, 46.5萬/坪</div>')[0];
+                popup_7bf9156270a94d28bd47d758d6fa52d2.setContent(html_f2ae749a35784fbe955fa3f53cd2438f);
+            
+
+            marker_c968f3952c014ebabeaa727cbba896d2.bindPopup(popup_7bf9156270a94d28bd47d758d6fa52d2);
+
+            
+        
+    
+
+            var marker_66971fe7f973452195e9cfb3b53c83c1 = L.marker(
+                [24.9651803871,121.540711362],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_5ec23755542b48618298e25c7e25631e = L.popup({maxWidth: '300'});
+
+            
+                var html_6ea100e4b5f548b4932712b6faa53ef9 = $('<div id="html_6ea100e4b5f548b4932712b6faa53ef9" style="width: 100.0%; height: 100.0%;">新店區檳榔路, 40.2萬/坪</div>')[0];
+                popup_5ec23755542b48618298e25c7e25631e.setContent(html_6ea100e4b5f548b4932712b6faa53ef9);
+            
+
+            marker_66971fe7f973452195e9cfb3b53c83c1.bindPopup(popup_5ec23755542b48618298e25c7e25631e);
+
+            
+        
+    
+
+            var marker_cf34cbededf949b38d78b9207c719a85 = L.marker(
+                [24.9708645,121.54258575],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_d62e3857764145b6a460598f515b8690 = L.popup({maxWidth: '300'});
+
+            
+                var html_8afc2390b91748ec80ef79893f208f84 = $('<div id="html_8afc2390b91748ec80ef79893f208f84" style="width: 100.0%; height: 100.0%;">新店區中正路, 19.5萬/坪</div>')[0];
+                popup_d62e3857764145b6a460598f515b8690.setContent(html_8afc2390b91748ec80ef79893f208f84);
+            
+
+            marker_cf34cbededf949b38d78b9207c719a85.bindPopup(popup_d62e3857764145b6a460598f515b8690);
+
+            
+        
+    
+
+            var marker_3e6b2e9fb37940a08250db19f46cf682 = L.marker(
+                [24.982866,121.54430025],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_f7907985a97044d686b6a91f019413a0 = L.popup({maxWidth: '300'});
+
+            
+                var html_b3a4ca8f6169474d95dd06f52e20f1e5 = $('<div id="html_b3a4ca8f6169474d95dd06f52e20f1e5" style="width: 100.0%; height: 100.0%;">新店區中興路三段220巷, 37.3萬/坪</div>')[0];
+                popup_f7907985a97044d686b6a91f019413a0.setContent(html_b3a4ca8f6169474d95dd06f52e20f1e5);
+            
+
+            marker_3e6b2e9fb37940a08250db19f46cf682.bindPopup(popup_f7907985a97044d686b6a91f019413a0);
+
+            
+        
+    
+
+            var marker_f0da8765bac74dcfa0e075880a18e1eb = L.marker(
+                [24.9690673,121.540523206],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_355ae234fe2c410784b45c328b47e502 = L.popup({maxWidth: '300'});
+
+            
+                var html_4cf716585b7448c8bad85ef93a7909e7 = $('<div id="html_4cf716585b7448c8bad85ef93a7909e7" style="width: 100.0%; height: 100.0%;">新店區中華路48巷, 27.7萬/坪</div>')[0];
+                popup_355ae234fe2c410784b45c328b47e502.setContent(html_4cf716585b7448c8bad85ef93a7909e7);
+            
+
+            marker_f0da8765bac74dcfa0e075880a18e1eb.bindPopup(popup_355ae234fe2c410784b45c328b47e502);
+
+            
+        
+    
+
+            var marker_29437d5b5493414f88d1eede003b69f2 = L.marker(
+                [24.9773419346,121.515699517],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_6e4073499d854d92be3d52640a9d27c5 = L.popup({maxWidth: '300'});
+
+            
+                var html_23fc256b3e054044b02b3c6603be09ac = $('<div id="html_23fc256b3e054044b02b3c6603be09ac" style="width: 100.0%; height: 100.0%;">新店區安民街, 20.0萬/坪</div>')[0];
+                popup_6e4073499d854d92be3d52640a9d27c5.setContent(html_23fc256b3e054044b02b3c6603be09ac);
+            
+
+            marker_29437d5b5493414f88d1eede003b69f2.bindPopup(popup_6e4073499d854d92be3d52640a9d27c5);
+
+            
+        
+    
+
+            var marker_faa6d410ad3c4db9983e7f943d97e969 = L.marker(
+                [24.986548299,121.541931],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_a5165646d3fe4cda82d8d31f1704bc5c = L.popup({maxWidth: '300'});
+
+            
+                var html_466864a630344d8890ba9c3e300b8619 = $('<div id="html_466864a630344d8890ba9c3e300b8619" style="width: 100.0%; height: 100.0%;">新店區中興路三段, 55.8萬/坪</div>')[0];
+                popup_a5165646d3fe4cda82d8d31f1704bc5c.setContent(html_466864a630344d8890ba9c3e300b8619);
+            
+
+            marker_faa6d410ad3c4db9983e7f943d97e969.bindPopup(popup_a5165646d3fe4cda82d8d31f1704bc5c);
+
+            
+        
+    
+
+            var marker_416cc63f0da643f9a0b3ed8f8027059e = L.marker(
+                [24.9415153736,121.503438153],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_4c8685244368435988e98abec44961ae = L.popup({maxWidth: '300'});
+
+            
+                var html_cf021444433245b8a16fd03d5ba8cfed = $('<div id="html_cf021444433245b8a16fd03d5ba8cfed" style="width: 100.0%; height: 100.0%;">新店區達觀路14巷, 15.0萬/坪</div>')[0];
+                popup_4c8685244368435988e98abec44961ae.setContent(html_cf021444433245b8a16fd03d5ba8cfed);
+            
+
+            marker_416cc63f0da643f9a0b3ed8f8027059e.bindPopup(popup_4c8685244368435988e98abec44961ae);
+
+            
+        
+    
+
+            var marker_0f7076dda85947cf954a715b3128a75c = L.marker(
+                [24.9637927245,121.516385078],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_dfc0300e37564b339b94123212888802 = L.popup({maxWidth: '300'});
+
+            
+                var html_92b99042f2fa47249941b2519e0cb1b2 = $('<div id="html_92b99042f2fa47249941b2519e0cb1b2" style="width: 100.0%; height: 100.0%;">新店區安康路二段, 33.8萬/坪</div>')[0];
+                popup_dfc0300e37564b339b94123212888802.setContent(html_92b99042f2fa47249941b2519e0cb1b2);
+            
+
+            marker_0f7076dda85947cf954a715b3128a75c.bindPopup(popup_dfc0300e37564b339b94123212888802);
+
+            
+        
+    
+
+            var marker_dcd9c18dcfc344859bf92ea26b4aa776 = L.marker(
+                [24.9753921087,121.526156872],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_71e90881f3e94f62b701851358a48d0a = L.popup({maxWidth: '300'});
+
+            
+                var html_b70558122eda4cfb9fd28441184fa78e = $('<div id="html_b70558122eda4cfb9fd28441184fa78e" style="width: 100.0%; height: 100.0%;">新店區中央三街, 57.0萬/坪</div>')[0];
+                popup_71e90881f3e94f62b701851358a48d0a.setContent(html_b70558122eda4cfb9fd28441184fa78e);
+            
+
+            marker_dcd9c18dcfc344859bf92ea26b4aa776.bindPopup(popup_71e90881f3e94f62b701851358a48d0a);
+
+            
+        
+    
+
+            var marker_4c9278c3886c4e49a93a7c946035b824 = L.marker(
+                [24.9450220234,121.499109665],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_56b68097b10b499482358d15c8fb367d = L.popup({maxWidth: '300'});
+
+            
+                var html_cc0646fa70834e2b94dcf446462abdfe = $('<div id="html_cc0646fa70834e2b94dcf446462abdfe" style="width: 100.0%; height: 100.0%;">新店區僑愛一路, 19.8萬/坪</div>')[0];
+                popup_56b68097b10b499482358d15c8fb367d.setContent(html_cc0646fa70834e2b94dcf446462abdfe);
+            
+
+            marker_4c9278c3886c4e49a93a7c946035b824.bindPopup(popup_56b68097b10b499482358d15c8fb367d);
+
+            
+        
+    
+
+            var marker_a76c5cd7c1ce49a1830e281b6f09798d = L.marker(
+                [24.9492839113,121.523722977],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_f2a6c672f14d4befb5c4fab67d1ad2d1 = L.popup({maxWidth: '300'});
+
+            
+                var html_8f81d82114ea4c1badbbeef4660ed5d9 = $('<div id="html_8f81d82114ea4c1badbbeef4660ed5d9" style="width: 100.0%; height: 100.0%;">新店區華城路, 39.7萬/坪</div>')[0];
+                popup_f2a6c672f14d4befb5c4fab67d1ad2d1.setContent(html_8f81d82114ea4c1badbbeef4660ed5d9);
+            
+
+            marker_a76c5cd7c1ce49a1830e281b6f09798d.bindPopup(popup_f2a6c672f14d4befb5c4fab67d1ad2d1);
+
+            
+        
+    
+
+            var marker_3f5edb46653b402d96298b60d6e4eaef = L.marker(
+                [24.9792087699,121.543924233],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_d9282d3b71c0416982bd596d57a5aa38 = L.popup({maxWidth: '300'});
+
+            
+                var html_a60a11367f144c6781ae9df8172625ef = $('<div id="html_a60a11367f144c6781ae9df8172625ef" style="width: 100.0%; height: 100.0%;">新店區寶強路, 69.7萬/坪</div>')[0];
+                popup_d9282d3b71c0416982bd596d57a5aa38.setContent(html_a60a11367f144c6781ae9df8172625ef);
+            
+
+            marker_3f5edb46653b402d96298b60d6e4eaef.bindPopup(popup_d9282d3b71c0416982bd596d57a5aa38);
+
+            
+        
+    
+
+            var marker_bd3582f300f04379a6e2c4a246fa7f9b = L.marker(
+                [24.9629679867,121.510908927],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_83ce7a11dce449a9b7efd1be048e5c95 = L.popup({maxWidth: '300'});
+
+            
+                var html_b2a58e3f89ab42509132d3eefe4cc0ba = $('<div id="html_b2a58e3f89ab42509132d3eefe4cc0ba" style="width: 100.0%; height: 100.0%;">新店區安德街60巷, 37.6萬/坪</div>')[0];
+                popup_83ce7a11dce449a9b7efd1be048e5c95.setContent(html_b2a58e3f89ab42509132d3eefe4cc0ba);
+            
+
+            marker_bd3582f300f04379a6e2c4a246fa7f9b.bindPopup(popup_83ce7a11dce449a9b7efd1be048e5c95);
+
+            
+        
+    
+
+            var marker_b25b8af2658546e1ac5292eb74ce7e31 = L.marker(
+                [24.9705087905,121.533232388],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_f272d03aaa604759b259226d85dc9397 = L.popup({maxWidth: '300'});
+
+            
+                var html_bc525603d98e418e83b38cb6e6b64636 = $('<div id="html_bc525603d98e418e83b38cb6e6b64636" style="width: 100.0%; height: 100.0%;">新店區環河路, 37.7萬/坪</div>')[0];
+                popup_f272d03aaa604759b259226d85dc9397.setContent(html_bc525603d98e418e83b38cb6e6b64636);
+            
+
+            marker_b25b8af2658546e1ac5292eb74ce7e31.bindPopup(popup_f272d03aaa604759b259226d85dc9397);
+
+            
+        
+    
+
+            var marker_68016529e8ca4bd2b67db5b41fa3b68c = L.marker(
+                [24.9629679867,121.510908927],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_1417f5cbdd9147b3928a8491b67aad08 = L.popup({maxWidth: '300'});
+
+            
+                var html_79b821ded4d24727be856f161f577b3a = $('<div id="html_79b821ded4d24727be856f161f577b3a" style="width: 100.0%; height: 100.0%;">新店區安德街60巷, 34.2萬/坪</div>')[0];
+                popup_1417f5cbdd9147b3928a8491b67aad08.setContent(html_79b821ded4d24727be856f161f577b3a);
+            
+
+            marker_68016529e8ca4bd2b67db5b41fa3b68c.bindPopup(popup_1417f5cbdd9147b3928a8491b67aad08);
+
+            
+        
+    
+
+            var marker_99207608322a4de1887b915581ff25e4 = L.marker(
+                [24.9603989791,121.508002765],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_e14578259a5b4af0a460e809e148fadc = L.popup({maxWidth: '300'});
+
+            
+                var html_78516ffa12b54cb784f5c9caa009d89d = $('<div id="html_78516ffa12b54cb784f5c9caa009d89d" style="width: 100.0%; height: 100.0%;">新店區安德街148巷12弄, 37.8萬/坪</div>')[0];
+                popup_e14578259a5b4af0a460e809e148fadc.setContent(html_78516ffa12b54cb784f5c9caa009d89d);
+            
+
+            marker_99207608322a4de1887b915581ff25e4.bindPopup(popup_e14578259a5b4af0a460e809e148fadc);
+
+            
+        
+    
+
+            var marker_c84f69b8cae44ab5928c457e93a79828 = L.marker(
+                [24.9600073784,121.508391973],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_acc90b41ea104a0f8f82214c25ee84d2 = L.popup({maxWidth: '300'});
+
+            
+                var html_04d33940d12448c4b3dc91bcc819f3a2 = $('<div id="html_04d33940d12448c4b3dc91bcc819f3a2" style="width: 100.0%; height: 100.0%;">新店區安德街, 34.7萬/坪</div>')[0];
+                popup_acc90b41ea104a0f8f82214c25ee84d2.setContent(html_04d33940d12448c4b3dc91bcc819f3a2);
+            
+
+            marker_c84f69b8cae44ab5928c457e93a79828.bindPopup(popup_acc90b41ea104a0f8f82214c25ee84d2);
+
+            
+        
+    
+
+            var marker_4aba777e45c3477b94f01a28ae9569f4 = L.marker(
+                [24.9337162255,121.555294086],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_5fc8eac27da64e2a9a528ec71a07168c = L.popup({maxWidth: '300'});
+
+            
+                var html_114b37339a004f76bf337829e4cfec1d = $('<div id="html_114b37339a004f76bf337829e4cfec1d" style="width: 100.0%; height: 100.0%;">新店區花園十路二段, 22.9萬/坪</div>')[0];
+                popup_5fc8eac27da64e2a9a528ec71a07168c.setContent(html_114b37339a004f76bf337829e4cfec1d);
+            
+
+            marker_4aba777e45c3477b94f01a28ae9569f4.bindPopup(popup_5fc8eac27da64e2a9a528ec71a07168c);
+
+            
+        
+    
+
+            var marker_712306c6042e494ca231dfd9a5c348e7 = L.marker(
+                [24.9627394643,121.543278443],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_482660b015e543e69cecc38cf0ba2fb9 = L.popup({maxWidth: '300'});
+
+            
+                var html_6f386a945d6d40c7b8795b6740d56484 = $('<div id="html_6f386a945d6d40c7b8795b6740d56484" style="width: 100.0%; height: 100.0%;">新店區檳榔路53巷, 44.6萬/坪</div>')[0];
+                popup_482660b015e543e69cecc38cf0ba2fb9.setContent(html_6f386a945d6d40c7b8795b6740d56484);
+            
+
+            marker_712306c6042e494ca231dfd9a5c348e7.bindPopup(popup_482660b015e543e69cecc38cf0ba2fb9);
+
+            
+        
+    
+
+            var marker_ec24bd4715cc416cbcb3006d8ea44bdb = L.marker(
+                [24.9435296646,121.478477392],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_a752603553e0417698af8d22772a7a61 = L.popup({maxWidth: '300'});
+
+            
+                var html_6d12db0c5a75455d92a7f3499197a1aa = $('<div id="html_6d12db0c5a75455d92a7f3499197a1aa" style="width: 100.0%; height: 100.0%;">新店區錦秀路52巷, 12.5萬/坪</div>')[0];
+                popup_a752603553e0417698af8d22772a7a61.setContent(html_6d12db0c5a75455d92a7f3499197a1aa);
+            
+
+            marker_ec24bd4715cc416cbcb3006d8ea44bdb.bindPopup(popup_a752603553e0417698af8d22772a7a61);
+
+            
+        
+    
+
+            var marker_608702801ae44c04ba77afcbb32292c3 = L.marker(
+                [24.9558326041,121.474213607],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_274c63b9b52b4148a3dcc113c0407ed2 = L.popup({maxWidth: '300'});
+
+            
+                var html_895d80cb5a944df583e785f198cc208b = $('<div id="html_895d80cb5a944df583e785f198cc208b" style="width: 100.0%; height: 100.0%;">新店區安祥路110巷, 21.1萬/坪</div>')[0];
+                popup_274c63b9b52b4148a3dcc113c0407ed2.setContent(html_895d80cb5a944df583e785f198cc208b);
+            
+
+            marker_608702801ae44c04ba77afcbb32292c3.bindPopup(popup_274c63b9b52b4148a3dcc113c0407ed2);
+
+            
+        
+    
+
+            var marker_ed17f51323964a39b2653ee04abc1ecb = L.marker(
+                [24.9558326041,121.474213607],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_8d05199da763437eb09d446e4cd0c0f5 = L.popup({maxWidth: '300'});
+
+            
+                var html_e51020ca925e487580dd3feae2040a04 = $('<div id="html_e51020ca925e487580dd3feae2040a04" style="width: 100.0%; height: 100.0%;">新店區安祥路110巷, 15.9萬/坪</div>')[0];
+                popup_8d05199da763437eb09d446e4cd0c0f5.setContent(html_e51020ca925e487580dd3feae2040a04);
+            
+
+            marker_ed17f51323964a39b2653ee04abc1ecb.bindPopup(popup_8d05199da763437eb09d446e4cd0c0f5);
+
+            
+        
+    
+
+            var marker_86a0b8bfe76e42a28f62f225d05453d6 = L.marker(
+                [24.9792087699,121.543924233],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_7442b6d4b20d406b86010cb26c02d17f = L.popup({maxWidth: '300'});
+
+            
+                var html_252d97c5f46b41cfa32a01288d5f7318 = $('<div id="html_252d97c5f46b41cfa32a01288d5f7318" style="width: 100.0%; height: 100.0%;">新店區寶強路, 78.6萬/坪</div>')[0];
+                popup_7442b6d4b20d406b86010cb26c02d17f.setContent(html_252d97c5f46b41cfa32a01288d5f7318);
+            
+
+            marker_86a0b8bfe76e42a28f62f225d05453d6.bindPopup(popup_7442b6d4b20d406b86010cb26c02d17f);
+
+            
+        
+    
+
+            var marker_099d211820e845c7a52a2af8a3644e29 = L.marker(
+                [24.9649875,121.51361475],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_f3f3fcd9aa7a4a53ad7ac4d5ccb8863a = L.popup({maxWidth: '300'});
+
+            
+                var html_12dddac3e90b4d7b9ed4ad2e8aee1eee = $('<div id="html_12dddac3e90b4d7b9ed4ad2e8aee1eee" style="width: 100.0%; height: 100.0%;">新店區安光路, 37.0萬/坪</div>')[0];
+                popup_f3f3fcd9aa7a4a53ad7ac4d5ccb8863a.setContent(html_12dddac3e90b4d7b9ed4ad2e8aee1eee);
+            
+
+            marker_099d211820e845c7a52a2af8a3644e29.bindPopup(popup_f3f3fcd9aa7a4a53ad7ac4d5ccb8863a);
+
+            
+        
+    
+
+            var marker_9125d951ccf64c3698a4539f9cc66d97 = L.marker(
+                [24.9649875,121.51361475],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_0ecca087e5f2476d8b1a1f5285134de8 = L.popup({maxWidth: '300'});
+
+            
+                var html_0f2e7a680dda409185a9301d6b29627f = $('<div id="html_0f2e7a680dda409185a9301d6b29627f" style="width: 100.0%; height: 100.0%;">新店區安光路, 36.4萬/坪</div>')[0];
+                popup_0ecca087e5f2476d8b1a1f5285134de8.setContent(html_0f2e7a680dda409185a9301d6b29627f);
+            
+
+            marker_9125d951ccf64c3698a4539f9cc66d97.bindPopup(popup_0ecca087e5f2476d8b1a1f5285134de8);
+
+            
+        
+    
+
+            var marker_9829e7d4a796497b8b9e08a2b840c8e7 = L.marker(
+                [24.9649875,121.51361475],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_b4959b331a884b6ba6a5a9e480aad640 = L.popup({maxWidth: '300'});
+
+            
+                var html_63e93d3bc3264f4383517b83a0619cb4 = $('<div id="html_63e93d3bc3264f4383517b83a0619cb4" style="width: 100.0%; height: 100.0%;">新店區安光路, 35.0萬/坪</div>')[0];
+                popup_b4959b331a884b6ba6a5a9e480aad640.setContent(html_63e93d3bc3264f4383517b83a0619cb4);
+            
+
+            marker_9829e7d4a796497b8b9e08a2b840c8e7.bindPopup(popup_b4959b331a884b6ba6a5a9e480aad640);
+
+            
+        
+    
+
+            var marker_82508aec948243fe881fcc0db3e2996a = L.marker(
+                [24.9649875,121.51361475],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_04739eb618804469aee21260a6a6b254 = L.popup({maxWidth: '300'});
+
+            
+                var html_3c667a3974d0441cb53b787dd8dbbe99 = $('<div id="html_3c667a3974d0441cb53b787dd8dbbe99" style="width: 100.0%; height: 100.0%;">新店區安光路, 34.7萬/坪</div>')[0];
+                popup_04739eb618804469aee21260a6a6b254.setContent(html_3c667a3974d0441cb53b787dd8dbbe99);
+            
+
+            marker_82508aec948243fe881fcc0db3e2996a.bindPopup(popup_04739eb618804469aee21260a6a6b254);
+
+            
+        
+    
+
+            var marker_8ed4d2b08b9b4a0889fe3849914fb8cd = L.marker(
+                [24.9649875,121.51361475],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_3b553c434ce24a09a32f99954f83769c = L.popup({maxWidth: '300'});
+
+            
+                var html_34d4b08ddeb548219bfbf9b09cf0f6ab = $('<div id="html_34d4b08ddeb548219bfbf9b09cf0f6ab" style="width: 100.0%; height: 100.0%;">新店區安光路, 34.8萬/坪</div>')[0];
+                popup_3b553c434ce24a09a32f99954f83769c.setContent(html_34d4b08ddeb548219bfbf9b09cf0f6ab);
+            
+
+            marker_8ed4d2b08b9b4a0889fe3849914fb8cd.bindPopup(popup_3b553c434ce24a09a32f99954f83769c);
+
+            
+        
+    
+
+            var marker_9552b703dc434415aafaca8c39cb1e10 = L.marker(
+                [24.9649875,121.51361475],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_e1dec00a1ad5449794b54ff37f6ee30d = L.popup({maxWidth: '300'});
+
+            
+                var html_f4b98336030c4ce1b34cddc5afd555ed = $('<div id="html_f4b98336030c4ce1b34cddc5afd555ed" style="width: 100.0%; height: 100.0%;">新店區安光路, 40.1萬/坪</div>')[0];
+                popup_e1dec00a1ad5449794b54ff37f6ee30d.setContent(html_f4b98336030c4ce1b34cddc5afd555ed);
+            
+
+            marker_9552b703dc434415aafaca8c39cb1e10.bindPopup(popup_e1dec00a1ad5449794b54ff37f6ee30d);
+
+            
+        
+    
+
+            var marker_c935e79a776445e8b925f0ab33e41bf2 = L.marker(
+                [24.9649875,121.51361475],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_2cc6f2802a0f411f80488b3d4a9df823 = L.popup({maxWidth: '300'});
+
+            
+                var html_4d2498d0f36049e18e01902135ab3b3d = $('<div id="html_4d2498d0f36049e18e01902135ab3b3d" style="width: 100.0%; height: 100.0%;">新店區安光路, 34.3萬/坪</div>')[0];
+                popup_2cc6f2802a0f411f80488b3d4a9df823.setContent(html_4d2498d0f36049e18e01902135ab3b3d);
+            
+
+            marker_c935e79a776445e8b925f0ab33e41bf2.bindPopup(popup_2cc6f2802a0f411f80488b3d4a9df823);
+
+            
+        
+    
+
+            var marker_02b4d14ab421446aad060da849aced82 = L.marker(
+                [24.9649875,121.51361475],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_195f3c4d064546a39211c8911b1908f8 = L.popup({maxWidth: '300'});
+
+            
+                var html_6ea338aa18bc4b5ab89ff5b9360b73ca = $('<div id="html_6ea338aa18bc4b5ab89ff5b9360b73ca" style="width: 100.0%; height: 100.0%;">新店區安光路, 34.9萬/坪</div>')[0];
+                popup_195f3c4d064546a39211c8911b1908f8.setContent(html_6ea338aa18bc4b5ab89ff5b9360b73ca);
+            
+
+            marker_02b4d14ab421446aad060da849aced82.bindPopup(popup_195f3c4d064546a39211c8911b1908f8);
+
+            
+        
+    
+
+            var marker_88eb86d745344e73b71f792b875a93b7 = L.marker(
+                [24.987015,121.52148525],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_e27de04585ce49679b541819e1468beb = L.popup({maxWidth: '300'});
+
+            
+                var html_d5ded991db1a491782e2c96df6fd76d8 = $('<div id="html_d5ded991db1a491782e2c96df6fd76d8" style="width: 100.0%; height: 100.0%;">新店區新和街, 33.3萬/坪</div>')[0];
+                popup_e27de04585ce49679b541819e1468beb.setContent(html_d5ded991db1a491782e2c96df6fd76d8);
+            
+
+            marker_88eb86d745344e73b71f792b875a93b7.bindPopup(popup_e27de04585ce49679b541819e1468beb);
+
+            
+        
+    
+
+            var marker_80ff4c010d004832926a3382b7b30a20 = L.marker(
+                [24.946254,121.50303075],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_d780c770d7f6489fb86c89b3ec9133f5 = L.popup({maxWidth: '300'});
+
+            
+                var html_d6d8a23a4b3543849fb8657b33bc8df8 = $('<div id="html_d6d8a23a4b3543849fb8657b33bc8df8" style="width: 100.0%; height: 100.0%;">新店區黎明路65巷, 19.7萬/坪</div>')[0];
+                popup_d780c770d7f6489fb86c89b3ec9133f5.setContent(html_d6d8a23a4b3543849fb8657b33bc8df8);
+            
+
+            marker_80ff4c010d004832926a3382b7b30a20.bindPopup(popup_d780c770d7f6489fb86c89b3ec9133f5);
+
+            
+        
+    
+
+            var marker_ea92f6bd1fbd499e91823c6f340b13c5 = L.marker(
+                [24.9753558641,121.54286891],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_a6a0364404704a68934ff8f813c75442 = L.popup({maxWidth: '300'});
+
+            
+                var html_d481f3a4d8324943b058a145212ee565 = $('<div id="html_d481f3a4d8324943b058a145212ee565" style="width: 100.0%; height: 100.0%;">新店區北新路二段, 43.1萬/坪</div>')[0];
+                popup_a6a0364404704a68934ff8f813c75442.setContent(html_d481f3a4d8324943b058a145212ee565);
+            
+
+            marker_ea92f6bd1fbd499e91823c6f340b13c5.bindPopup(popup_a6a0364404704a68934ff8f813c75442);
+
+            
+        
+    
+
+            var marker_f455449c268848d39c6e81676d5bf92f = L.marker(
+                [24.9480507725,121.514849119],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_dc447b8c54414179a37e0b430d73139f = L.popup({maxWidth: '300'});
+
+            
+                var html_4bf0c909be2a409cb6576032e8217a2c = $('<div id="html_4bf0c909be2a409cb6576032e8217a2c" style="width: 100.0%; height: 100.0%;">新店區青山路88巷1弄, 47.8萬/坪</div>')[0];
+                popup_dc447b8c54414179a37e0b430d73139f.setContent(html_4bf0c909be2a409cb6576032e8217a2c);
+            
+
+            marker_f455449c268848d39c6e81676d5bf92f.bindPopup(popup_dc447b8c54414179a37e0b430d73139f);
+
+            
+        
+    
+
+            var marker_09318676faf84ea188694e6fd3a3c57c = L.marker(
+                [24.9755204851,121.546241064],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_1bc8ee9ba58344f9a9afc30d2865c377 = L.popup({maxWidth: '300'});
+
+            
+                var html_69ddef3795734bc392caef79c2f33463 = $('<div id="html_69ddef3795734bc392caef79c2f33463" style="width: 100.0%; height: 100.0%;">新店區寶橋路78巷, 54.8萬/坪</div>')[0];
+                popup_1bc8ee9ba58344f9a9afc30d2865c377.setContent(html_69ddef3795734bc392caef79c2f33463);
+            
+
+            marker_09318676faf84ea188694e6fd3a3c57c.bindPopup(popup_1bc8ee9ba58344f9a9afc30d2865c377);
+
+            
+        
+    
+
+            var marker_15b10e5648c94840b5fcfc9e711c9b15 = L.marker(
+                [24.9706118683,121.546834813],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_672f44237bf54b8caf8abdb13213d9b9 = L.popup({maxWidth: '300'});
+
+            
+                var html_62002544a52b40b7903de09bbb47055f = $('<div id="html_62002544a52b40b7903de09bbb47055f" style="width: 100.0%; height: 100.0%;">新店區中興路二段, 41.8萬/坪</div>')[0];
+                popup_672f44237bf54b8caf8abdb13213d9b9.setContent(html_62002544a52b40b7903de09bbb47055f);
+            
+
+            marker_15b10e5648c94840b5fcfc9e711c9b15.bindPopup(popup_672f44237bf54b8caf8abdb13213d9b9);
+
+            
+        
+    
+
+            var marker_2c02f5435fc2480896a3a7ddce94295d = L.marker(
+                [24.9534199433,121.553679508],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_cec85b9d38f5427e877442654b1dc991 = L.popup({maxWidth: '300'});
+
+            
+                var html_c87c0932eb054bd6b707d488fa595b3a = $('<div id="html_c87c0932eb054bd6b707d488fa595b3a" style="width: 100.0%; height: 100.0%;">新店區北宜路二段, 28.0萬/坪</div>')[0];
+                popup_cec85b9d38f5427e877442654b1dc991.setContent(html_c87c0932eb054bd6b707d488fa595b3a);
+            
+
+            marker_2c02f5435fc2480896a3a7ddce94295d.bindPopup(popup_cec85b9d38f5427e877442654b1dc991);
+
+            
+        
+    
+
+            var marker_0b635b93d7734920aabdc3888306649b = L.marker(
+                [24.9565375948,121.538415122],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_075e727723b64289bbb195d013f256f2 = L.popup({maxWidth: '300'});
+
+            
+                var html_822f246394bd4b9280240ad34150585a = $('<div id="html_822f246394bd4b9280240ad34150585a" style="width: 100.0%; height: 100.0%;">新店區北宜路一段39巷, 37.5萬/坪</div>')[0];
+                popup_075e727723b64289bbb195d013f256f2.setContent(html_822f246394bd4b9280240ad34150585a);
+            
+
+            marker_0b635b93d7734920aabdc3888306649b.bindPopup(popup_075e727723b64289bbb195d013f256f2);
+
+            
+        
+    
+
+            var marker_0b23891a79354512b529b403fe7760cd = L.marker(
+                [24.9324525628,121.551340708],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_df7a1f342536462a9a2d157ead24f255 = L.popup({maxWidth: '300'});
+
+            
+                var html_a6c26a7a1117475fa478b86c79909c05 = $('<div id="html_a6c26a7a1117475fa478b86c79909c05" style="width: 100.0%; height: 100.0%;">新店區花園一路二段10之, 23.4萬/坪</div>')[0];
+                popup_df7a1f342536462a9a2d157ead24f255.setContent(html_a6c26a7a1117475fa478b86c79909c05);
+            
+
+            marker_0b23891a79354512b529b403fe7760cd.bindPopup(popup_df7a1f342536462a9a2d157ead24f255);
+
+            
+        
+    
+
+            var marker_7bb84f5ab9bf424493802eedff142699 = L.marker(
+                [24.9721532245,121.551123556],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_10f84c3288614255843e0c98726fb859 = L.popup({maxWidth: '300'});
+
+            
+                var html_850405a820d6434a830cfcaab020f427 = $('<div id="html_850405a820d6434a830cfcaab020f427" style="width: 100.0%; height: 100.0%;">新店區寶興路61巷, 32.4萬/坪</div>')[0];
+                popup_10f84c3288614255843e0c98726fb859.setContent(html_850405a820d6434a830cfcaab020f427);
+            
+
+            marker_7bb84f5ab9bf424493802eedff142699.bindPopup(popup_10f84c3288614255843e0c98726fb859);
+
+            
+        
+    
+
+            var marker_89f886b50b314922a284cb979b0fa023 = L.marker(
+                [24.9580824724,121.533908704],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_d1ce5af4c0ab48feba0a199f63f1e0e7 = L.popup({maxWidth: '300'});
+
+            
+                var html_acdbd8e03b084acaaab01d02ed8d98e3 = $('<div id="html_acdbd8e03b084acaaab01d02ed8d98e3" style="width: 100.0%; height: 100.0%;">新店區太平路, 45.0萬/坪</div>')[0];
+                popup_d1ce5af4c0ab48feba0a199f63f1e0e7.setContent(html_acdbd8e03b084acaaab01d02ed8d98e3);
+            
+
+            marker_89f886b50b314922a284cb979b0fa023.bindPopup(popup_d1ce5af4c0ab48feba0a199f63f1e0e7);
+
+            
+        
+    
+
+            var marker_9c930d6600a04347bc2e359ef788bf0e = L.marker(
+                [24.9625716548,121.480987638],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_278ed8e9d7ab40f78731ced79d3aca6c = L.popup({maxWidth: '300'});
+
+            
+                var html_2b1553fe8b3f4af3b29a5fbc32df95bf = $('<div id="html_2b1553fe8b3f4af3b29a5fbc32df95bf" style="width: 100.0%; height: 100.0%;">新店區安祥路73巷, 23.2萬/坪</div>')[0];
+                popup_278ed8e9d7ab40f78731ced79d3aca6c.setContent(html_2b1553fe8b3f4af3b29a5fbc32df95bf);
+            
+
+            marker_9c930d6600a04347bc2e359ef788bf0e.bindPopup(popup_278ed8e9d7ab40f78731ced79d3aca6c);
+
+            
+        
+    
+
+            var marker_1daacd59c7394270b584033ce44913b8 = L.marker(
+                [24.9585220683,121.474839386],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_3c0f239a80c448608ac4f19af9d3b8d4 = L.popup({maxWidth: '300'});
+
+            
+                var html_a635590757a64daa81349fb119b2e0b6 = $('<div id="html_a635590757a64daa81349fb119b2e0b6" style="width: 100.0%; height: 100.0%;">新店區安祥路108巷, 26.4萬/坪</div>')[0];
+                popup_3c0f239a80c448608ac4f19af9d3b8d4.setContent(html_a635590757a64daa81349fb119b2e0b6);
+            
+
+            marker_1daacd59c7394270b584033ce44913b8.bindPopup(popup_3c0f239a80c448608ac4f19af9d3b8d4);
+
+            
+        
+    
+
+            var marker_2ad5efca90d840a9ac485d9103b7c094 = L.marker(
+                [24.9639002264,121.542014105],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_c65e9141a37146d398385090a09b339f = L.popup({maxWidth: '300'});
+
+            
+                var html_fa5fe4753a9e45229160fe4863978f95 = $('<div id="html_fa5fe4753a9e45229160fe4863978f95" style="width: 100.0%; height: 100.0%;">新店區檳榔路29巷, 41.6萬/坪</div>')[0];
+                popup_c65e9141a37146d398385090a09b339f.setContent(html_fa5fe4753a9e45229160fe4863978f95);
+            
+
+            marker_2ad5efca90d840a9ac485d9103b7c094.bindPopup(popup_c65e9141a37146d398385090a09b339f);
+
+            
+        
+    
+
+            var marker_03858718ba6e429381ab2d64a059e7fb = L.marker(
+                [24.9578006743,121.53832731],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_8955347c31bc4b8ca63063bbbf302fe3 = L.popup({maxWidth: '300'});
+
+            
+                var html_a581b35890d1465e83002e3f99b342fe = $('<div id="html_a581b35890d1465e83002e3f99b342fe" style="width: 100.0%; height: 100.0%;">新店區中興路一段, 46.3萬/坪</div>')[0];
+                popup_8955347c31bc4b8ca63063bbbf302fe3.setContent(html_a581b35890d1465e83002e3f99b342fe);
+            
+
+            marker_03858718ba6e429381ab2d64a059e7fb.bindPopup(popup_8955347c31bc4b8ca63063bbbf302fe3);
+
+            
+        
+    
+
+            var marker_7c4cce280584439794f42b1127fe4aab = L.marker(
+                [24.9565375948,121.538415122],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_22545b1af80c4386b12b6ca080e20f48 = L.popup({maxWidth: '300'});
+
+            
+                var html_69b4d4f28aeb449587eed13f57170eef = $('<div id="html_69b4d4f28aeb449587eed13f57170eef" style="width: 100.0%; height: 100.0%;">新店區北宜路一段39巷, 31.7萬/坪</div>')[0];
+                popup_22545b1af80c4386b12b6ca080e20f48.setContent(html_69b4d4f28aeb449587eed13f57170eef);
+            
+
+            marker_7c4cce280584439794f42b1127fe4aab.bindPopup(popup_22545b1af80c4386b12b6ca080e20f48);
+
+            
+        
+    
+
+            var marker_998193ea709e457e911123caf7a47180 = L.marker(
+                [24.9706118683,121.546834813],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_9f142f4bd46841e9bb9641f999fd3578 = L.popup({maxWidth: '300'});
+
+            
+                var html_4d7398cf20d3462a80f9dac8dd48916a = $('<div id="html_4d7398cf20d3462a80f9dac8dd48916a" style="width: 100.0%; height: 100.0%;">新店區中興路二段, 53.3萬/坪</div>')[0];
+                popup_9f142f4bd46841e9bb9641f999fd3578.setContent(html_4d7398cf20d3462a80f9dac8dd48916a);
+            
+
+            marker_998193ea709e457e911123caf7a47180.bindPopup(popup_9f142f4bd46841e9bb9641f999fd3578);
+
+            
+        
+    
+
+            var marker_a15b08a5177142c2b548a2ead70fdcaf = L.marker(
+                [24.9494927389,121.484115403],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_261bc3cb2f684ec594cccc400ebfcd1f = L.popup({maxWidth: '300'});
+
+            
+                var html_f3ee0942990f47f3a61c71e4991ac968 = $('<div id="html_f3ee0942990f47f3a61c71e4991ac968" style="width: 100.0%; height: 100.0%;">新店區安康路三段359巷12弄, 14.7萬/坪</div>')[0];
+                popup_261bc3cb2f684ec594cccc400ebfcd1f.setContent(html_f3ee0942990f47f3a61c71e4991ac968);
+            
+
+            marker_a15b08a5177142c2b548a2ead70fdcaf.bindPopup(popup_261bc3cb2f684ec594cccc400ebfcd1f);
+
+            
+        
+    
+
+            var marker_f9dde83b430945d9be79e85225abcd3c = L.marker(
+                [24.9571142216,121.538249687],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_13e239d8ce5f4cc0a8a2c0b18d671c9d = L.popup({maxWidth: '300'});
+
+            
+                var html_5c22666ab8664f9eb03bb7b90404a316 = $('<div id="html_5c22666ab8664f9eb03bb7b90404a316" style="width: 100.0%; height: 100.0%;">新店區北宜路一段, 36.3萬/坪</div>')[0];
+                popup_13e239d8ce5f4cc0a8a2c0b18d671c9d.setContent(html_5c22666ab8664f9eb03bb7b90404a316);
+            
+
+            marker_f9dde83b430945d9be79e85225abcd3c.bindPopup(popup_13e239d8ce5f4cc0a8a2c0b18d671c9d);
+
+            
+        
+    
+
+            var marker_fc9c9f2fcd704f8ab61343547357c820 = L.marker(
+                [24.9558326041,121.474213607],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_bbb2ecd314ef4e9abdc7480c274ffc67 = L.popup({maxWidth: '300'});
+
+            
+                var html_8de4eea8860d4c4c911f9fbc03d06ee8 = $('<div id="html_8de4eea8860d4c4c911f9fbc03d06ee8" style="width: 100.0%; height: 100.0%;">新店區安祥路110巷, 14.2萬/坪</div>')[0];
+                popup_bbb2ecd314ef4e9abdc7480c274ffc67.setContent(html_8de4eea8860d4c4c911f9fbc03d06ee8);
+            
+
+            marker_fc9c9f2fcd704f8ab61343547357c820.bindPopup(popup_bbb2ecd314ef4e9abdc7480c274ffc67);
+
+            
+        
+    
+
+            var marker_d972eed86eac474cb280f4a385a43888 = L.marker(
+                [24.9868534819,121.52014897],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_55ddcf0dcb664a138ca0340e3b35276a = L.popup({maxWidth: '300'});
+
+            
+                var html_f5e5ee5e0b6d4df08989c0c696d80def = $('<div id="html_f5e5ee5e0b6d4df08989c0c696d80def" style="width: 100.0%; height: 100.0%;">新店區永安街83巷17弄, 31.3萬/坪</div>')[0];
+                popup_55ddcf0dcb664a138ca0340e3b35276a.setContent(html_f5e5ee5e0b6d4df08989c0c696d80def);
+            
+
+            marker_d972eed86eac474cb280f4a385a43888.bindPopup(popup_55ddcf0dcb664a138ca0340e3b35276a);
+
+            
+        
+    
+
+            var marker_129c4a04116d4bb08c0a05e9b93791f3 = L.marker(
+                [24.9792087699,121.543924233],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_8330f529a7bf42bfa348c065dc186f99 = L.popup({maxWidth: '300'});
+
+            
+                var html_fe9d3e151a304fe0b0b98a1c2aa011ca = $('<div id="html_fe9d3e151a304fe0b0b98a1c2aa011ca" style="width: 100.0%; height: 100.0%;">新店區寶強路, 71.8萬/坪</div>')[0];
+                popup_8330f529a7bf42bfa348c065dc186f99.setContent(html_fe9d3e151a304fe0b0b98a1c2aa011ca);
+            
+
+            marker_129c4a04116d4bb08c0a05e9b93791f3.bindPopup(popup_8330f529a7bf42bfa348c065dc186f99);
+
+            
+        
+    
+
+            var marker_91b8540da46a4d9cbeb4a66f1096af32 = L.marker(
+                [24.9792087699,121.543924233],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_85bc35ffbfa6479e83fd5e6e94c5af4f = L.popup({maxWidth: '300'});
+
+            
+                var html_0290b2193dfc466e9d801082eeddde51 = $('<div id="html_0290b2193dfc466e9d801082eeddde51" style="width: 100.0%; height: 100.0%;">新店區寶強路, 61.8萬/坪</div>')[0];
+                popup_85bc35ffbfa6479e83fd5e6e94c5af4f.setContent(html_0290b2193dfc466e9d801082eeddde51);
+            
+
+            marker_91b8540da46a4d9cbeb4a66f1096af32.bindPopup(popup_85bc35ffbfa6479e83fd5e6e94c5af4f);
+
+            
+        
+    
+
+            var marker_730d312a499641c9984f539129c28f55 = L.marker(
+                [24.9618984259,121.540418303],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_b4ccaeb85b004addaef03c0ae67e9ee7 = L.popup({maxWidth: '300'});
+
+            
+                var html_a64d27636a4044379cdf5062ec5981ff = $('<div id="html_a64d27636a4044379cdf5062ec5981ff" style="width: 100.0%; height: 100.0%;">新店區光明街168巷5弄, 36.3萬/坪</div>')[0];
+                popup_b4ccaeb85b004addaef03c0ae67e9ee7.setContent(html_a64d27636a4044379cdf5062ec5981ff);
+            
+
+            marker_730d312a499641c9984f539129c28f55.bindPopup(popup_b4ccaeb85b004addaef03c0ae67e9ee7);
+
+            
+        
+    
+
+            var marker_818960086a2e4601a55049e7ae559e41 = L.marker(
+                [24.9735156507,121.516172009],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_55e57cb39ccd48ada659752f12180635 = L.popup({maxWidth: '300'});
+
+            
+                var html_8da01d766a3a4f65b136a7ffde6bf25f = $('<div id="html_8da01d766a3a4f65b136a7ffde6bf25f" style="width: 100.0%; height: 100.0%;">新店區安興路, 30.0萬/坪</div>')[0];
+                popup_55e57cb39ccd48ada659752f12180635.setContent(html_8da01d766a3a4f65b136a7ffde6bf25f);
+            
+
+            marker_818960086a2e4601a55049e7ae559e41.bindPopup(popup_55e57cb39ccd48ada659752f12180635);
+
+            
+        
+    
+
+            var marker_a066020cd8e243919b73bc4e6254c571 = L.marker(
+                [24.9578793316,121.532733904],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_dcefa57a2f114642a4853a4258b87411 = L.popup({maxWidth: '300'});
+
+            
+                var html_9bebe6d4a0bf4d55a024596051f8a604 = $('<div id="html_9bebe6d4a0bf4d55a024596051f8a604" style="width: 100.0%; height: 100.0%;">新店區合作路, 36.9萬/坪</div>')[0];
+                popup_dcefa57a2f114642a4853a4258b87411.setContent(html_9bebe6d4a0bf4d55a024596051f8a604);
+            
+
+            marker_a066020cd8e243919b73bc4e6254c571.bindPopup(popup_dcefa57a2f114642a4853a4258b87411);
+
+            
+        
+    
+
+            var marker_14e16f5c88c642ec9e30ca2118f61f70 = L.marker(
+                [24.9755204851,121.546241064],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_6748ad665dc7491999b8c0ededa74eb5 = L.popup({maxWidth: '300'});
+
+            
+                var html_9cbffb3cfa9c4eda839be9391f993692 = $('<div id="html_9cbffb3cfa9c4eda839be9391f993692" style="width: 100.0%; height: 100.0%;">新店區寶橋路78巷, 53.6萬/坪</div>')[0];
+                popup_6748ad665dc7491999b8c0ededa74eb5.setContent(html_9cbffb3cfa9c4eda839be9391f993692);
+            
+
+            marker_14e16f5c88c642ec9e30ca2118f61f70.bindPopup(popup_6748ad665dc7491999b8c0ededa74eb5);
+
+            
+        
+    
+
+            var marker_63b9115a3f87453cab3c4aa6f41b6a81 = L.marker(
+                [24.96734,121.5414],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_2ccc4c9a827d48a99710d2f94c47f242 = L.popup({maxWidth: '300'});
+
+            
+                var html_603521951f694053a5989738eada4c1d = $('<div id="html_603521951f694053a5989738eada4c1d" style="width: 100.0%; height: 100.0%;">新店區五?路63巷8弄, 13.4萬/坪</div>')[0];
+                popup_2ccc4c9a827d48a99710d2f94c47f242.setContent(html_603521951f694053a5989738eada4c1d);
+            
+
+            marker_63b9115a3f87453cab3c4aa6f41b6a81.bindPopup(popup_2ccc4c9a827d48a99710d2f94c47f242);
+
+            
+        
+    
+
+            var marker_108b6712380045268e29e52014381dd4 = L.marker(
+                [24.911058891,121.534664237],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_03d8f4a5e532459794482c6946d772fc = L.popup({maxWidth: '300'});
+
+            
+                var html_0e2e083c853945b386edf466e102fe81 = $('<div id="html_0e2e083c853945b386edf466e102fe81" style="width: 100.0%; height: 100.0%;">新店區廣興路138巷, 17.0萬/坪</div>')[0];
+                popup_03d8f4a5e532459794482c6946d772fc.setContent(html_0e2e083c853945b386edf466e102fe81);
+            
+
+            marker_108b6712380045268e29e52014381dd4.bindPopup(popup_03d8f4a5e532459794482c6946d772fc);
+
+            
+        
+    
+
+            var marker_44a5db32e9894a3d90e57bd921ebcbae = L.marker(
+                [24.9706118683,121.546834813],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_14f80e8c37f24658961416ed02f58d07 = L.popup({maxWidth: '300'});
+
+            
+                var html_45064ed8ea824f68b46abf257c5a2117 = $('<div id="html_45064ed8ea824f68b46abf257c5a2117" style="width: 100.0%; height: 100.0%;">新店區中興路二段, 47.1萬/坪</div>')[0];
+                popup_14f80e8c37f24658961416ed02f58d07.setContent(html_45064ed8ea824f68b46abf257c5a2117);
+            
+
+            marker_44a5db32e9894a3d90e57bd921ebcbae.bindPopup(popup_14f80e8c37f24658961416ed02f58d07);
+
+            
+        
+    
+
+            var marker_8bfc541b6cdf42ed81c53a16559ccc06 = L.marker(
+                [24.986548299,121.541931],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_883c049490614631932068bb52a2ac08 = L.popup({maxWidth: '300'});
+
+            
+                var html_ce77cedaa0ab45a8aaabe0d36dc516fa = $('<div id="html_ce77cedaa0ab45a8aaabe0d36dc516fa" style="width: 100.0%; height: 100.0%;">新店區中興路三段, 46.4萬/坪</div>')[0];
+                popup_883c049490614631932068bb52a2ac08.setContent(html_ce77cedaa0ab45a8aaabe0d36dc516fa);
+            
+
+            marker_8bfc541b6cdf42ed81c53a16559ccc06.bindPopup(popup_883c049490614631932068bb52a2ac08);
+
+            
+        
+    
+
+            var marker_642187202b5344fd8ffc9a02d228d63d = L.marker(
+                [24.9779205,121.54103775],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_4c9246ea76b64c74af0148925108735e);
+            
+    
+            var popup_69ad08f3505c4b7782042cb48aaaf39b = L.popup({maxWidth: '300'});
+
+            
+                var html_afb70f7d9665452193ee0338e297ecf6 = $('<div id="html_afb70f7d9665452193ee0338e297ecf6" style="width: 100.0%; height: 100.0%;">新店區明德路75巷, 46.9萬/坪</div>')[0];
+                popup_69ad08f3505c4b7782042cb48aaaf39b.setContent(html_afb70f7d9665452193ee0338e297ecf6);
+            
+
+            marker_642187202b5344fd8ffc9a02d228d63d.bindPopup(popup_69ad08f3505c4b7782042cb48aaaf39b);
+
+            
+        
+</script>
